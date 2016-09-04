@@ -86,35 +86,35 @@ export class LayoutDirective {
 
   _getFlexClasses() {
     let flexClasses: string[] = [];
-    if (this.flex) {
-      flexClasses.push(this.flex === 'column' ? 'flex-column' : 'flex-row');
+    if (typeof this.flex !== 'undefined') {
+      flexClasses.push(this.flex.length ? `flex-${this.flex}` : 'flex');
     }
-    if (this.flexXs) {
-      flexClasses.push(this.flexXs === 'column' ? 'flex-xs-column' : 'flex-xs-row');
+    if (typeof this.flexXs !== 'undefined') {
+      flexClasses.push(this.flexXs.length ? `flex-xs-${this.flexXs}` : 'flex-xs');
     }
-    if (this.flexGtXs) {
-      flexClasses.push(this.flexGtXs === 'column' ? 'flex-gt-xs-column' : 'flex-gt-xs-row');
+    if (typeof this.flexGtXs !== 'undefined') {
+      flexClasses.push(this.flexGtXs.length ? `flex-gt-xs-${this.flexGtXs}` : 'flex-gt-xs');
     }
-    if (this.flexSm) {
-      flexClasses.push(this.flexSm === 'column' ? 'flex-sm-column' : 'flex-sm-row');
+    if (typeof this.flexSm !== 'undefined') {
+      flexClasses.push(this.flexSm ? `flex-sm-${this.flexSm}` : 'flex-sm');
     }
-    if (this.flexGtSm) {
-      flexClasses.push(this.flexGtSm === 'column' ? 'flex-gt-sm-column' : 'flex-gt-sm-row');
+    if (typeof this.flexGtSm !== 'undefined') {
+      flexClasses.push(this.flexGtSm ? `flex-gt-sm-${this.flexGtSm}` : 'flex-gt-sm');
     }
-    if (this.flexMd) {
-      flexClasses.push(this.flexMd === 'column' ? 'flex-md-column' : 'flex-md-row');
+    if (typeof this.flexMd !== 'undefined') {
+      flexClasses.push(this.flexMd ? `flex-md-${this.flexMd}` : 'flex-md');
     }
-    if (this.flexGtMd) {
-      flexClasses.push(this.flexGtMd === 'column' ? 'flex-gt-md-column' : 'flex-gt-md-row');
+    if (typeof this.flexGtMd !== 'undefined') {
+      flexClasses.push(this.flexGtMd ? `flex-gt-md-${this.flexGtMd}` : 'flex-gt-md');
     }
-    if (this.flexLg) {
-      flexClasses.push(this.flexLg === 'column' ? 'flex-lg-column' : 'flex-lg-row');
+    if (typeof this.flexLg !== 'undefined') {
+      flexClasses.push(this.flexLg ? `flex-lg-${this.flexLg}` : 'flex-lg');
     }
-    if (this.flexGtLg) {
-      flexClasses.push(this.flexGtLg === 'column' ? 'flex-gt-lg-column' : 'flex-gt-lg-row');
+    if (typeof this.flexGtLg !== 'undefined') {
+      flexClasses.push(this.flexGtLg ? `flex-gt-lg-${this.flexGtLg}` : 'flex-gt-lg');
     }
-    if (this.flexXl) {
-      flexClasses.push(this.flexXl === 'column' ? 'flex-xl-column' : 'flex-xl-row');
+    if (typeof this.flexXl !== 'undefined') {
+      flexClasses.push(this.flexXl ? `flex-xl-${this.flexXl}` : 'flex-xl');
     }
     return flexClasses.join(' ');
   }
