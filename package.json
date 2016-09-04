@@ -1,6 +1,10 @@
 {
   "name": "ng2-flex-layout",
   "version": "0.1.5",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ramirezd42/ng2-flex-layout.git"
+  },
   "scripts": {
     "lint": "tslint src/**/*.ts",
     "test": "tsc && karma start",
