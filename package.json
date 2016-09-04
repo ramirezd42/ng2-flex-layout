@@ -5,8 +5,7 @@
     "lint": "tslint src/**/*.ts",
     "test": "tsc && karma start",
     "build": "gulp && tsc",
-    "postinstall": "typings install",
-    "prepublish": "npm run build",
+    "prepublish": "typings install && npm run build",
     "sass": "gulp sass"
   },
   "description": "Angular 2 Material Responsive Layout Directives",
