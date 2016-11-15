@@ -1,3 +1,9 @@
+# WARNING This project is no longer in development
+
+Until there is an official solution from the material 2 team, I recommend including the Sass files from angular meterial 1 and either using the attribute selectors directly (same way you would in material 1). Or just using the classnames directly if you have to support some IE versions or just prefer a class-based api. 
+
+Check out this thread for more info: angular/material2#946
+
 # ng2-flex-layout
 ng2-flex-layout is a small set of Angular 2 attribute directives aimed at providing flex-box based responsive layout directives that are api-compatible with those found in [Angular Material 1](https://material.angularjs.org/latest/layout/introduction).
 
